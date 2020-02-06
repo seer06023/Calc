@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Calc</string>
+    <string name="zero">0</string>
+    <string name="tooBig">Too Big</string>
+</resources>
