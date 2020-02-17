@@ -22,10 +22,11 @@ class MainActivity : AppCompatActivity() {
         setupCalculator()
     }
     private fun setupCalculator () {
-        val allButtons = arrayOf(button0, button1, button2, button3, button4, button5, button6, button7, button8, button9, buttonC, buttonMinus, buttonPlus, buttonEquals, buttonMultiplicate)
+        val allButtons = arrayOf(button0, button1, button2, button3, button4, button5, button6, button7,
+            button8, button9, buttonC, buttonMinus, buttonPlus, buttonEquals, buttonMultiplicate)
         for (i in allButtons.indices) {
-            allButtons[i].setOnClickListener { didPressNumber(i) }
-        }
+            allButtons[i].setOnClickListener { didPressNumber(i) }}
+
         buttonPlus.setOnClickListener { changeMode(CalculatorMode.Add) }
         buttonMinus.setOnClickListener { changeMode(CalculatorMode.Subtract) }
         buttonMultiplicate.setOnClickListener { changeMode(CalculatorMode.Multiplicate) }
